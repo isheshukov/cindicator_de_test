@@ -60,7 +60,7 @@ class MovingAverageLogger:
 
     def process_payload(self, payload) -> 'self.PayloadData':
         """
-        Process payload using cumulative sum average
+        Process payload using simple moving average
 
         :param payload: Dictionary in Binance candle response format
         :return: Latest rolling average
