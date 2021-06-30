@@ -7,7 +7,6 @@ python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
-
 To run the program
 
 ```
@@ -22,7 +21,7 @@ python -m src.tests
 To run the program in Docker
 ```
 docker build -t cindicator .
-docker run -v ./logs:/app/logs --rm cindicator
+docker run -v .:/app --rm cindicator
 ```
 
 To run the tests
