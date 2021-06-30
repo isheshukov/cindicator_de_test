@@ -21,7 +21,8 @@ python -m src.tests
 To run the program in Docker
 ```
 docker build -t cindicator .
-docker run -v .:/app --rm cindicator
+mkdir logs
+docker run -v ./logs:/app/logs --rm cindicator
 ```
 
 To run the tests
